@@ -20,7 +20,7 @@ var Question = {
 			var a_div = $("#answer_" + sequence_1[i]);
 			a_div.text(this.answers[sequence_2[i]]);
 		}
-		answer_timeout = setTimeout(timeout, 10000);
+		answer_timeout = setTimeout(timeout, 15000);
 	},
 
 	display_answer: function(state) {
@@ -33,7 +33,7 @@ var Question = {
 		}
 		$("#correct").text(this.correct);
 		$("#question").text(state);
-		setTimeout(next_question, 5000);
+		setTimeout(next_question, 10000);
 	}
 }
 
