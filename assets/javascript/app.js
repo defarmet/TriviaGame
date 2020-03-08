@@ -40,7 +40,7 @@ var Question = {
 function endgame() {
 	$("#correct").empty();
 	$("#fact").empty();
-	$("#question").text("You got " + a_correct + "/"+ questions.length + "answers correct");
+	$("#question").text("You got " + a_correct + "/"+ questions.length + " answers correct");
 	$("#reset").text("Click here to play again.");
 }
 
@@ -90,6 +90,7 @@ questions.push(create_question("Which attraction did not open with Walt Disney W
 questions.push(create_question("What is the newest ride open at Walt Disney World?", ["Millenium Falcon: Smuggler's Run", "Star Wars: Rise of the Resistance", "Mickey & Minnie's Runaway Railway", "Avatar Flight of Passage"], 2, "Runaway Railway uses scene transforming technology that has been in development for over 10 years."));
 questions.push(create_question("EPCOT recently updated multiple shows around the park. Which one has not opened yet?", ["Wonderous China", "Awesome Planet", "Canada: Far and Wide", "Beauty and the Beast Sing-Along"], 0, "While announced in 2017, the current show, Reflections of China, still plays to this day."));
 questions.push(create_question("Which of these characters did not originate in a Disney Park?", ["Chuuby", "Orange Bird", "Figment", "Br'er Rabbit"], 3, "Br'er Rabbit originates from the 1946 film Song of the South. Good luck finding a copy of that film."));
+questions.push(create_question("What is the name of the pilot droid from the original Star Tours?", ["C-3PO", "AC-38", "RX-24", "R5-D4"], 2, "RX-24 appears in the wait line for Star Tours: The Adventures Continue. He can be heard saying lines from the  original ride."));
 
 function check_answer() {
 	clearTimeout(answer_timeout);
