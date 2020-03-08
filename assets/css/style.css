@@ -1,0 +1,15 @@
+body {
+	background-color: lightblue;
+}
+
+h1 {
+	padding: 15px;
+}
+
+div {
+	font-size: 24px;
+}
+
+.row {
+	padding: 10px;
+}

@@ -29,7 +29,7 @@ var Question = {
 		}
 		if (state === "Correct!") {
 			a_correct++;
-			$("#fact").html("Fun fact:<br>" + this.fun_fact);
+			$("#fact").html(this.fun_fact);
 		}
 		$("#correct").text(this.correct);
 		$("#question").text(state);
