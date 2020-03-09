@@ -15,7 +15,7 @@ var Question = {
 		$("#question").text(this.question);
 		$("#fact").empty();
 		var sequence_1 = shuffle([0, 1, 2, 3]);
-		var sequence_2 = shuffle([0, 1, 2, 3]);
+		var sequence_2 = [0, 1, 2, 3];
 		for (var i = 0; i < 4; i++) {
 			var a_div = $("#answer_" + sequence_1[i]);
 			a_div.text(this.answers[sequence_2[i]]);
